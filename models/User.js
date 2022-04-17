@@ -32,7 +32,9 @@ const userSchema = mongoose.Schema({
         type:Number
     }
 })
-//스키마는 모델로 감싼다.
+/*
+model은 스키마를 감싸주는 역할
+*/
 const User = mongoose.model('User', userSchema);
 
 module.exports={User};
